@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thalby</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/raster/logo_main.png" alt="Логотип">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#guides">
+                            Guides
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#bestsellers">
+                            Best sellers
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#moreguides">
+                            More guides
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-fall">
+            <div class="section-fall__container">
+                <div class="section-fall__text">
+                    <h1 class="section-fall__fall-in-love">Fall deeper in love with humanity.</h1>
+                    <h3 class="section-fall__get-to-know">Get to know the world through our concise, informative and inspiring guides.</h3>
+                    <a href="#" class="section-fall__button">
+                        <button class="section-fall__btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="section-fall__img">
+                    <img src="img/raster/pad_and_phone.png" alt="" class="section-fall__pad-img">
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <h2 article id="guides" class="h2guides">Explore Our Guides</h2>
+        <div class="slider">
+            <div class="slider__container">
+                <img src="./img/raster/pad_girl_longhair.png" alt="" class="slider__image fade" />
+            </div>
+            <div class="slider__controls">
+                <div class="slider__dots">
+                    <span class="slider__dot activ" onclick="changeIndex(0)"></span>
+                    <span class="slider__dot" onclick="changeIndex(1)"></span>
+                    <span class="slider__dot" onclick="changeIndex(2)"></span>
+                </div>
+                <button class="slider__nav slider__nav-left">&lt;</button>
+                <button class="slider__nav slider__nav-right">&gt;</button>
+            </div>
+        </div>
+
+
+        <section class="section-guides">
+            <div class="section-guides__container">
+                <div class="section-guides__text">
+                    <h2 class="section-guides__our-guides">Our guides explain countries and cultures.</h2>
+                    <h4 class="section-guides__are-you">
+                        Are you curious about the world around you? Our guides are for smart global citizens, world travelers 
+                        and engaged residents, who want to gain a deeper understanding of the cultures and societies they care about.
+                    </h4>
+                    <h4 class="section-guides__available">Available as ebooks here and on Amazon.</h4>
+                </div>
+                <div article id="bestsellers" class="section-guides__sellers">
+                    <h2 class="section-guides__our-best">Our best sellers</h2>
+                </div>
+                <ul class="list">
+                    <li class="list__item" data-id="all">All</li>
+                    <li class="list__item" data-id="german">German</li>
+                    <li class="list__item" data-id="french">French</li>
+                </ul>
+
+
+                <div class="section-guides__pads">
+                    <div class="section-guides__pad french">
+                        <img src="img/raster/pad_man_hat.png" alt="" class="section-guides__pad-img">
+                        <p class="section-guides__pad-title">Thalby Guide to French Culture and Heritage</p>
+                        <p class="section-guides__pad-price">USD 6.99</p>
+                        <p class="section-guides__action">Add to cart</p>
+                    </div>
+                    <div class="section-guides__pad french">
+                        <img src="img/raster/pad_girl_longhair.png" alt="" class="section-guides__pad-img">
+                        <p class="section-guides__pad-title">Thalby Guide to French People and Society</p>
+                        <p class="section-guides__pad-price">USD 6.99</p>
+                        <p class="section-guides__action">Add to cart</p>
+                    </div>
+                    <div class="section-guides__pad german">
+                        <img src="img/raster/pad_girl_shorthair.png" alt="" class="section-guides__pad-img">
+                        <p class="section-guides__pad-title">Thalby Guide to German Culture and Heritage</p>
+                        <p class="section-guides__pad-price">USD 6.99</p>
+                        <p class="section-guides__action">Add to cart</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div  class="info">
+            <div article id="moreguides" class="info-title">Explore more our guides</div>
+            <div class="info-header">
+                <div class="info-header-tab active">People and Society</div>
+                <div class="info-header-tab">Culture and Heritage</div>
+                <div class="info-header-tab">Power and Politics</div>
+            </div>
+            <div class="info-tabcontent fade">
+                <div class="photo">
+                    <img src="img/raster/pad_girl_longhair.png" alt="Massage" />
+                </div>
+                <div class="description">
+                    <div class="description-title">People and Society</div>
+                    <div class="description-text">
+                        Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.
+                    </div>
+                    <button class="description-btn">Shop Society Guides</button>
+                </div>
+            </div>
+            <div class="info-tabcontent fade">
+                <div class="photo">
+                    <img src="img/raster/pad_man_sunglasses.png" alt="Massage" />
+                </div>
+                <div class="description">
+                    <div class="description-title">Culture and Heritage</div>
+                    <div class="description-text">
+                        As well as covering heritage and tradition, our guides to culture introduce you to the designers, artists and chefs creating at the forefront of today's culture.
+                    </div>
+                    <button class="description-btn">Shop Culture Guides</button>
+                </div>
+            </div>
+            <div class="info-tabcontent fade">
+                <div class="photo">
+                    <img src="img/raster/pad_girl_glasses.png" alt="Massage" />
+                </div>
+                <div class="description">
+                    <div class="description-title">Power and Politics</div>
+                    <div class="description-text">
+                        Our guides to power take you behind the scenes to explore the power dynamics, policies and politics shaping a country's future and its global position.
+                    </div>
+                    <button class="description-btn">Coming 2022!</button>
+                </div>
+            </div>
+        </div>
+        <div id="accordion" class="accordion">
+            <p article id="faq" class="accordion-head">Why us?</p>
+            <div class="accordion-block">
+                Our guides allow you to get the most extensive information on your chosen topic.
+                When creating these guidelines, we take into account the needs of each user group
+                to which the information contained inside is directed.
+                Our guides are recognized as one of the best
+            </div>
+            <p class="accordion-head">What should I do if I don't like your product?</p>
+            <div class="accordion-block">
+                We provide an instant refund in case of your dissatisfaction
+            </div>
+        </div>
+        <div class="cookies" id="cookies">
+            <div class="cookies__descr">
+                By using our website you agree that
+                <a class="cookies__link" href="#">we use cookies</a>
+            </div>
+            <div class="cookies__btn" id="cookies__btn">Ok</div>
+        </div>
+
+    </main>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="footer__footerlogo">
+                <img src="img/vector/logo_footer.svg" alt="">
+                <div class="footer__medialogo">
+                        <img  src="img/vector/inst_footer.svg" alt="" class="footer__mediaimg">
+                        <img  src="img/vector/fb_footer.svg" alt="" class="footer__mediaimg">
+                        <img  src="img/vector/twitter_footer.svg" alt="" class="footer__mediaimg">
+                </div>
+            </div>
+            <div class="footer__footerlinks">
+                <div>
+                    <h6>ABOUT</h6>
+                    <ul>
+                        <li class = "footer__footli"><h6>About Us</h6></li>
+                        <li class = "footer__footli"><h6>Privacy Policy</h6></li>
+                        <li class = "footer__footli"><h6>Terms and Conditions</h6></li>
+                        <li class = "footer__footli"><h6>Write for Us</h6></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="footer__footerlinks">
+                <div>
+                    <h6>CONTACT</h6>
+                    <ul>
+                        <li class = "footer__footli"><h6>Email hi@thalby.com</h6></li>
+                        <li class = "footer__footli"><h6>Help</h6></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
